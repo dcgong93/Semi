@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Product Info</title>
+    <link rel="stylesheet" href="/static/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="contaier">
+      <h1>Product Info</h1>
+      <div class="row">
+        <div class="col-md-3">
+          <p>Name:</p>
+        </div>
+        <div class="col-md-5">
+          <p>{{products['product_name']}}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <p>Description:</p>
+        </div>
+        <div class="col-md-5">
+          <p>{{products['product_description']}}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <p>Price:</p>
+        </div>
+        <div class="col-md-5">
+          <p>{{products['product_price']}}</p>
+        </div>
+      </div>
+        <ul class="list-inline">
+          <li><a href="/products/edit/{{product.id}}">Edit</a></li>
+          <li><a href="/">Back</a></li>
+        </ul>
+    </div>
+  </body>
+</html>
